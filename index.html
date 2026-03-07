@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PainOwl · Precision Instrument UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div>
+        <div class="logo-row">
+          <div class="logo-wrap"><span class="owl-dot"></span><span class="logo">PainOwl</span></div>
+          <button class="icon-btn">◦</button>
+        </div>
+        <nav class="nav-list">
+          <a class="nav-item active" href="#radar">Radar</a>
+          <a class="nav-item" href="#tracked">Tracked</a>
+          <a class="nav-item" href="#profile">Startup Profile</a>
+        </nav>
+      </div>
+      <nav class="nav-list bottom-nav">
+        <a class="nav-item" href="#">Support</a>
+        <a class="nav-item" href="#">Sign Out</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section id="radar" class="screen">
+        <header class="page-header">
+          <div>
+            <h1>Radar</h1>
+            <p>Last scan Mar 5 · 138 results · 5 platforms</p>
+          </div>
+          <button class="btn btn-primary">New Scan</button>
+        </header>
+
+        <div class="pulse-banner">
+          <span>Track 3+ pain points for 2 weeks to unlock Validation Pulse</span>
+          <div class="progress"><div class="progress-fill" style="width: 66%"></div></div>
+          <span class="mono">2/3</span>
+        </div>
+
+        <div class="filter-row">
+          <div class="segmented">
+            <button class="active">All (138)</button>
+            <button>Discover (15)</button>
+            <button>Validate (95)</button>
+          </div>
+          <button class="btn btn-secondary btn-sm">Score: High to Low</button>
+        </div>
+
+        <div class="section-head">TOP SIGNALS</div>
+        <div class="featured-list">
+          <article class="featured-card">
+            <div class="overline">Top Signal</div>
+            <div class="title-row">
+              <h3>Founders in early stages face psychological and operational isolation.</h3>
+              <div class="score-ring" data-score="91"></div>
+            </div>
+            <p>Community-led growth exists, but recurring structured accountability circles remain scarce.</p>
+            <footer>
+              <div class="badge-row"><span class="badge">DEV.to</span><span class="badge">Reddit</span></div>
+              <div class="actions"><button class="btn btn-primary btn-sm">Track</button><button class="icon-btn">✕</button></div>
+            </footer>
+          </article>
+        </div>
+
+        <div class="section-head">ALL RESULTS (127)</div>
+        <div class="grid-cards">
+          <article class="grid-card">
+            <div class="title-row"><h4>Founders join communities for support but leave without measurable progress.</h4><div class="score-ring" data-score="88"></div></div>
+            <div class="badge-row"><span class="badge">DEV.to</span><span class="badge">GitHub</span><span class="badge">+1</span></div>
+            <div class="card-actions"><button class="btn btn-primary btn-sm">Track</button><button class="icon-btn">✕</button></div>
+          </article>
+          <article class="grid-card">
+            <div class="title-row"><h4>Professionals are abandoning LinkedIn due to poor signal-to-noise.</h4><div class="score-ring" data-score="85"></div></div>
+            <div class="badge-row"><span class="badge">YouTube</span><span class="badge">News</span></div>
+            <div class="card-actions"><button class="btn btn-secondary btn-sm">Tracked</button><button class="icon-btn">✕</button></div>
+          </article>
+          <article class="grid-card">
+            <div class="title-row"><h4>Entrepreneurs cannot distinguish credible investors from noise.</h4><div class="score-ring" data-score="82"></div></div>
+            <div class="badge-row"><span class="badge">GitHub</span><span class="badge">DEV.to</span></div>
+            <div class="card-actions"><button class="btn btn-primary btn-sm">Track</button><button class="icon-btn">✕</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="tracked" class="screen">
+        <header class="page-header">
+          <div>
+            <h1>Tracked</h1>
+            <p>6 pain points under observation</p>
+          </div>
+        </header>
+        <div class="section-head">TRACKED ITEMS</div>
+        <div class="tracked-list">
+          <article class="tracked-card">
+            <div class="title-row"><h4>Founders Lack Structured Peer Accountability Systems</h4><div class="tracked-right"><div class="score-ring inline" data-score="91"></div><span class="trend up">Rising</span></div></div>
+            <div class="meta"><span class="mono">Day 1/14</span><span class="dot"></span><span>Verdict pending</span></div>
+            <div class="progress thin"><div class="progress-fill" style="width:7%"></div></div>
+            <div class="actions-row"><button class="btn btn-secondary btn-sm">View Brief</button><button class="btn btn-ghost btn-sm">Content Angles</button><button class="btn btn-ghost btn-sm push">Archive</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="profile" class="screen profile">
+        <header class="page-header"><div><h1>Startup Profile</h1></div></header>
+        <div class="tabs"><button class="active">Profile</button><button>Competitors & Features</button><button>Reports & Sources</button></div>
+        <div class="form-card">
+          <div class="section-head">CORE IDENTITY</div>
+          <label>Startup Name<input value="Founder Connects" /></label>
+          <label>Website URL<input value="https://www.founderconnects.com/" /></label>
+          <label>Core Assumption<textarea>Founders need structured accountability with weekly cadence.</textarea></label>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
